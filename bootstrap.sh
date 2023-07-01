@@ -1,2 +1,2 @@
-cd docker-compose-lamp
+cd docker-compose-lamp-fengoffice
 docker-compose up -d
