@@ -19,5 +19,5 @@ RUN cp docker-compose-lamp/sample.env docker-compose-lamp/.env
 # modify sample.env as needed
 RUN cd docker-compose-lamp/
 RUN pwd
-RUN docker-compose up -d
+RUN docker-compose -f docker-compose-lamp/docker-compose.yml up -d
 # visit localhost
