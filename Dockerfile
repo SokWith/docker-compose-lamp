@@ -14,8 +14,8 @@ RUN apt-get -y install docker-compose
 
 RUN git clone https://github.com/sprintcube/docker-compose-lamp.git
 RUN cd docker-compose-lamp/
-RUN ls -l
-RUN cp sample.env .env
+RUN ls -l docker-compose-lamp/
+RUN cp docker-compose-lamp/sample.env docker-compose-lamp/.env
 # modify sample.env as needed
 RUN docker-compose up -d
 # visit localhost
