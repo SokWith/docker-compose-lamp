@@ -11,9 +11,9 @@ RUN apt-get -y install cron \
 
 RUN apt-get -y install git
 
-git clone https://github.com/sprintcube/docker-compose-lamp.git
-cd docker-compose-lamp/
-cp sample.env .env
+RUN git clone https://github.com/sprintcube/docker-compose-lamp.git
+RUN cd docker-compose-lamp/
+RUN cp sample.env .env
 # modify sample.env as needed
-docker-compose up -d
+RUN docker-compose up -d
 # visit localhost
