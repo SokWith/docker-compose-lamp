@@ -12,10 +12,10 @@ RUN apt-get -y install cron \
 RUN apt-get -y install git
 RUN apt-get -y install docker-compose
 
-RUN git clone https://github.com/SokWith/docker-compose-lamp-fengoffice.git
+RUN git clone https://github.com/SokWith/docker-compose-lamp.git
 
-RUN ls -l docker-compose-lamp-fengoffice/
-#RUN cp docker-compose-lamp/sample.env docker-compose-lamp-fengoffice/.env
+RUN ls -l docker-compose-lamp/
+#RUN cp docker-compose-lamp/sample.env docker-compose-lamp/.env
 # modify sample.env as needed
 #RUN cd docker-compose-lamp/
 #RUN pwd
