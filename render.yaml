@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: FengOA
+    env: docker
+    repo: https://github.com/SokWith/docker-compose-lamp.git 
+    region: oregon 
+    plan: free 
+    branch: master 
+    rootDir: ./
